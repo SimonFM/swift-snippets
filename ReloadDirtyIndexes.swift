@@ -1,5 +1,5 @@
-if let dirtySelected = cache.getDirty(), !dirtySelected.isEmpty {
-    reload()
+if let dirty = cache.getDirty(), !dirtySelected.isEmpty {
+    reloadRows(for: dirty)
 }
 
 func reloadRows(for items : [Item]) {
